@@ -11,7 +11,6 @@ jobs:
     - name: Set up Chrome
       uses: nanasess/setup-chromedriver@v1
       with:
-        chrome-version: 'latest'  # Or specify a particular version
         chromedriver-version: 'latest'  # Or specify a particular version
 
     - name: Install dependencies
