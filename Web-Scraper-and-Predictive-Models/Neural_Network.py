@@ -13,8 +13,8 @@ y = df[['Expected Democrat Result 2024', 'Expected Republican Result 2024']]
 # Step 2: Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Step 3: Create and train the model
-model = MLPRegressor(hidden_layer_sizes=(256, 128), activation='tanh', solver='sgd', max_iter=1000, random_state=42)
+# Step 3: Create and train the model.
+model = MLPRegressor(hidden_layer_sizes=(256, 128), activation='tanh', solver='sgd', max_iter=1000, random_state=42, alpha=0.005)
 model.fit(X_train, y_train)
 
 # Step 4: Make predictions
